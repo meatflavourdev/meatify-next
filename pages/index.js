@@ -6,8 +6,22 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Meatify</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="title" content="Meatify" />
+        <meta name="description" content="Meatify is a modality agnostic technology lab and business incubator based in Vancouver, BC" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.meatify.com/" />
+        <meta property="og:title" content="Meatify" />
+        <meta property="og:description" content="Meatify is a modality agnostic technology lab and business incubator based in Vancouver, BC" />
+        <meta property="og:image" content="https://www.meatify.com/social.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.meatify.com/" />
+        <meta property="twitter:title" content="Meatify" />
+        <meta property="twitter:description" content="Meatify is a modality agnostic technology lab and business incubator based in Vancouver, BC" />
+        <meta property="twitter:image" content="https://www.meatify.com/social.png" />
       </Head>
 
       <main>
