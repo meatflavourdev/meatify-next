@@ -4,6 +4,7 @@ specifiers:
   '@chakra-ui/react': ^1.6.0
   '@emotion/react': ^11
   '@emotion/styled': ^11
+  '@splitbee/web': ^0.2.4
   framer-motion: ^4
   next: ^10.0.0
   react: 17.0.1
@@ -14,6 +15,7 @@ dependencies:
   '@chakra-ui/react': 1.6.0_9841e897e12dced5a12d37d6ec059ce8
   '@emotion/react': 11.1.5_react@17.0.1
   '@emotion/styled': 11.3.0_4b80f41a0504e676117da0fe4cafbadf
+  '@splitbee/web': 0.2.4
   framer-motion: 4.1.11_react-dom@17.0.1+react@17.0.1
   next: 10.2.0_react-dom@17.0.1+react@17.0.1
   react: 17.0.1
@@ -1077,6 +1079,10 @@ packages:
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
       tslib: 2.2.0
+    dev: false
+
+  /@splitbee/web/0.2.4:
+    resolution: {integrity: sha512-LMXnN5X/jen4ssBZ8ULXckQgJVvv8Ox2brcK7g2aLrok8ISzO76+DC0b6Cierk8oIXcx/+aflbVuBaKKFqyBCg==}
     dev: false
 
   /@types/lodash.mergewith/4.6.6:

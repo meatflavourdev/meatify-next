@@ -1,8 +1,17 @@
 import Head from 'next/head';
 import { ChakraProvider } from '@chakra-ui/react';
 import { Box, Link } from '@chakra-ui/react';
+import splitbee from '@splitbee/web';
+import React from 'react';
+
 
 export default function Home() {
+
+  React.useEffect(() => {
+    // This initiliazes Splitbee.js
+    splitbee.init()
+  }, []);
+
   return (
     <div className="container">
       <Head>
