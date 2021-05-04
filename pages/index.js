@@ -37,7 +37,7 @@ export default function Home() {
         <ChakraProvider>
           <iframe className="splineCanvas" src="./meatify-logo/index.html"></iframe>
           <Box pos="absolute" bottom="5" right="8">
-            <Link bgGradient="linear(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea)" bgClip="text" href="mLinkilto:humans@meatify.com">
+            <Link bgGradient="linear(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea)" bgClip="text" href="mLinkilto:humans@meatify.com" onClick={() => {splitbee.track('Email Link Click')}}>
               humans@meatify.com
             </Link>
           </Box>
