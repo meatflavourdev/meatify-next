@@ -11,7 +11,7 @@ export default function Home() {
   }, []);
 
   function handleEmailClick(e) {
-    splitbee.track('Email Link Click');
+    splitbee.track('Email Link Click', {});
   }
 
   return (
