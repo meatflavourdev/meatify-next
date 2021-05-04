@@ -10,6 +10,10 @@ export default function Home() {
     splitbee.init();
   }, []);
 
+  function handleEmailClick(e) {
+    splitbee.track('Email Link Click');
+  }
+
   return (
     <div className="container">
       <Head>
@@ -48,9 +52,7 @@ export default function Home() {
               bgGradient="linear(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea)"
               bgClip="text"
               href="mailto:humans@meatify.com"
-              onClick={() => {
-                splitbee.track('Email Link Click');
-              }}
+              onClick={handleEmailClick}
             >
               humans@meatify.com
             </Link>
