@@ -47,7 +47,7 @@ export default function Home() {
             <Link
               bgGradient="linear(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea)"
               bgClip="text"
-              href="mLinkilto:humans@meatify.com"
+              href="mailto:humans@meatify.com"
               onClick={() => {
                 splitbee.track('Email Link Click');
               }}
