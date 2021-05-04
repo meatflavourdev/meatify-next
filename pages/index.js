@@ -4,12 +4,10 @@ import { Box, Link } from '@chakra-ui/react';
 import splitbee from '@splitbee/web';
 import React from 'react';
 
-
 export default function Home() {
-
   React.useEffect(() => {
     // This initiliazes Splitbee.js
-    splitbee.init()
+    splitbee.init();
   }, []);
 
   return (
@@ -18,18 +16,27 @@ export default function Home() {
         <title>Meatify</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="title" content="Meatify" />
-        <meta name="description" content="Meatify is a modality agnostic technology lab and business incubator based in Vancouver, BC" />
+        <meta
+          name="description"
+          content="Meatify is a modality agnostic technology lab and business incubator based in Vancouver, BC"
+        />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.meatify.com/" />
         <meta property="og:title" content="Meatify" />
-        <meta property="og:description" content="Meatify is a modality agnostic technology lab and business incubator based in Vancouver, BC" />
+        <meta
+          property="og:description"
+          content="Meatify is a modality agnostic technology lab and business incubator based in Vancouver, BC"
+        />
         <meta property="og:image" content="https://www.meatify.com/social.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.meatify.com/" />
         <meta property="twitter:title" content="Meatify" />
-        <meta property="twitter:description" content="Meatify is a modality agnostic technology lab and business incubator based in Vancouver, BC" />
+        <meta
+          property="twitter:description"
+          content="Meatify is a modality agnostic technology lab and business incubator based in Vancouver, BC"
+        />
         <meta property="twitter:image" content="https://www.meatify.com/social.png" />
       </Head>
 
@@ -37,7 +44,14 @@ export default function Home() {
         <ChakraProvider>
           <iframe className="splineCanvas" src="./meatify-logo/index.html"></iframe>
           <Box pos="absolute" bottom="5" right="8">
-            <Link bgGradient="linear(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea)" bgClip="text" href="mLinkilto:humans@meatify.com" onClick={() => {splitbee.track('Email Link Click')}}>
+            <Link
+              bgGradient="linear(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea)"
+              bgClip="text"
+              href="mLinkilto:humans@meatify.com"
+              onClick={() => {
+                splitbee.track('Email Link Click');
+              }}
+            >
               humans@meatify.com
             </Link>
           </Box>
